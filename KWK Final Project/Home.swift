@@ -15,44 +15,38 @@ struct Home: View {
             Image(.homeBackground)
                 .resizable(resizingMode: .stretch)
                 .aspectRatio(contentMode: .fit)
-     /*
             VStack {
+                Spacer()
                 HStack {
-                    NavigationStack {
-                        Text("Content")
-                    }
-                }
-                HStack {
-                    /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Content@*/Text("Content")/*@END_MENU_TOKEN@*/
-                }
-            }
-      */
-            
-           VStack {
-                HStack {
-                    Spacer()
                     NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
                         Image(.waterTrackerIcon)
                             .resizable()
-                            .position(x: 140, y: 130)
+                            .position(x: 150, y: 140)
                             .padding(.leading)
                             .frame(width: 250.0, height: 250.0)
                     }
                     NavigationLink(destination: WaterTracker()) {
                         Image(.recipesIcon)
                             .resizable()
-                            .position(x: 100, y: 125)
+                            .position(x: 90, y: 136)
                             .padding(.trailing)
                             .frame(width: 250.0, height: 250.0)
-                    Spacer()
                     }
                 }
                 HStack {
                     NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
-                        /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Label Content@*/Text("Navigate")/*@END_MENU_TOKEN@*/
+                        Image(.climateChangeIcon)
+                            .resizable()
+                            .position(x: 150, y: 70)
+                            .padding(.leading)
+                            .frame(width: 250.0, height: 250.0)
                     }
                     NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
-                        /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Label Content@*/Text("Navigate")/*@END_MENU_TOKEN@*/
+                        Image(.stayCoolIcon)
+                            .resizable()
+                            .position(x: 78, y: 74)
+                            .padding(.leading)
+                            .frame(width: 250.0, height: 250.0)
                     }
                 }
         
