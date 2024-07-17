@@ -1,8 +1,8 @@
 //
-//  informationPage.swift
+//  educationPage.swift
 //  KWK Final Project
 //
-//  Created by Scholar on 7/16/24.
+//  Created by Scholar on 7/17/24.
 //
 
 import SwiftUI
