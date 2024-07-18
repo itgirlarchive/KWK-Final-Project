@@ -12,7 +12,6 @@ struct WaterTracker: View {
     @State var totalWater: Int = 0
     @State var wrongInput: Bool = false
     @State var yChange: Int = 0
-    let limitWater: Int = 0
     @State var metWater: Bool = false
     var body: some View {
 
@@ -67,6 +66,12 @@ struct WaterTracker: View {
 
 
                 }
+                Text("Ounces Consumed: \(totalWater) oz / 120 oz")
+                    .font(.title3)
+                    .fontWeight(.bold)
+                    .foregroundColor(Color.black)
+                    .padding(.bottom)
+
                 
              TextField("Water Consumed in Ounces", text: $waterCons)
                     .padding(.bottom)
@@ -112,16 +117,6 @@ struct WaterTracker: View {
                                     wrongInput = false
                                 }
                 }
-              
-               // if totalWater >= 117{
-                   /* Text("You have reached your daily need!")
-                        .font(.title3)
-                        .fontWeight(.medium)
-                        .foregroundColor(Color.green)
-                        .multilineTextAlignment(.center)
-                        .padding()
-                    
-          //      }*/
                 if metWater {
                     Text("You have reached your daily need!")
                         .font(.title3)
@@ -139,6 +134,21 @@ struct WaterTracker: View {
                             metWater = false
                         }
                 }
+                
+                
+                Button("Reset Progress") {
+                    totalWater = 0
+                    yChange = 0
+                    metWater = false
+                    waterCons = ""
+                }
+                .font(.title3)
+                .padding(.all)
+                .background(Rectangle() .foregroundColor(.white))
+                .cornerRadius(15)
+                
+
+
 
             }
 
