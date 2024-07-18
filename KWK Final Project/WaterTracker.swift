@@ -24,15 +24,16 @@ struct WaterTracker: View {
 
         }
       */
+        
         ZStack {
             
             Color("BackColor").ignoresSafeArea()
             Image("Water")
                 .resizable(resizingMode: .stretch)
                 .aspectRatio(contentMode: .fit)
-                .position(x: 200, y: CGFloat(1037 - yChange))
-            //y = 1037: lowest visible point for blue rectangle
-            //y = 677: highest visible point for blue rectangle
+                .position(x: 200, y: CGFloat(1057 - yChange))
+            //y = 1057: lowest visible point for blue rectangle
+            //y = 697: highest visible point for blue rectangle
             //have to drink 120 ounces to get to full
             HStack {
                 VStack {
@@ -40,7 +41,7 @@ struct WaterTracker: View {
                         .renderingMode(.original)
                         .resizable(resizingMode: .stretch)
                         .aspectRatio(contentMode: .fill)
-                        .position(CGPoint(x: 195, y: 450))
+                        .position(CGPoint(x: 195, y: 470))
 
                 }
 
@@ -134,20 +135,6 @@ struct WaterTracker: View {
                             metWater = false
                         }
                 }
-                
-                
-                Button("Reset Progress") {
-                    totalWater = 0
-                    yChange = 0
-                    metWater = false
-                    waterCons = ""
-                }
-                .font(.title3)
-                .padding(.all)
-                .background(Rectangle() .foregroundColor(.white))
-                .cornerRadius(15)
-                
-
 
 
             }
