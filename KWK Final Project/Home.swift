@@ -34,7 +34,7 @@ struct Home: View {
                     }
                 }
                 HStack {
-                    NavigationLink(destination: informationPage()) {
+                    NavigationLink(destination: educationPage()) {
                         Image(.climateChangeIcon)
                             .resizable()
                             .position(x: 150, y: 70)
