@@ -15,6 +15,7 @@ struct ContentView: View {
                 VStack {
                     Image("WaveHeatIcon")
                         .resizable(resizingMode: .stretch)
+                        .position(x: 197, y: 550)
                         .aspectRatio(contentMode: .fill)
                     NavigationLink(destination: Home()) {
                         Image(.getStarted)
