@@ -18,18 +18,18 @@ struct Home: View {
             VStack {
                 Spacer()
                 HStack {
-                    NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
+                    NavigationLink(destination: WaterTracker()) {
                         Image(.waterTrackerIcon)
                             .resizable()
                             .position(x: 150, y: 140)
                             .padding(.leading)
                             .frame(width: 250.0, height: 250.0)
                     }
-                    NavigationLink(destination: WaterTracker()) {
-                        Image(.recipesIcon)
+                    NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
+                        Image(.climateChangeIcon)
                             .resizable()
-                            .position(x: 90, y: 136)
-                            .padding(.trailing)
+                            .position(x: 84, y: 138)
+                            .padding(.leading)
                             .frame(width: 250.0, height: 250.0)
                     }
                 }
