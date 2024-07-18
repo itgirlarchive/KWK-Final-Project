@@ -10,27 +10,34 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         NavigationStack {
-        ZStack {
-            Color("BackColor").ignoresSafeArea()
-            VStack {
-                Image("WaveHeat")
-                    .resizable(resizingMode: .stretch)
-                    .aspectRatio(contentMode: .fit)
-                
-            }
-            VStack {
-                Spacer()
-                NavigationLink(destination: Home()) {
-                    Image(/*@START_MENU_TOKEN@*/"Image Name"/*@END_MENU_TOKEN@*/)
-            }
-                    
-            }
+            ZStack {
+                Color("BackColor").ignoresSafeArea()
+                VStack {
+                    VStack {
+                        Image("WaveHeatIcon")
+                            .resizable(resizingMode: .stretch)
+                            .aspectRatio(contentMode: .fill)
+                    VStack {
+                        Spacer()
+                        NavigationLink(destination: Home()) {
+                            //Change to start button
+                            Image("RecipesIcon")
+                                .resizable(resizingMode:.stretch)
+                                .aspectRatio(contentMode: .fit)
+                            }
+                        
+                    }
 
-        }
+                }
+                
+                    
+                    
+                    
+                }
+            }
         }
     }
 }
-
 #Preview {
     ContentView()
 }
