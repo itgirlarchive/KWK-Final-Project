@@ -41,7 +41,7 @@ struct Home: View {
                             .padding(.leading)
                             .frame(width: 250.0, height: 250.0)
                     }
-                    NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
+                    NavigationLink(destination: StayCool()) {
                         Image(.stayCoolIcon)
                             .resizable()
                             .position(x: 78, y: 74)
