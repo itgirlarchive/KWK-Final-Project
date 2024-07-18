@@ -8,8 +8,13 @@
 import SwiftUI
 
 struct WaterTracker: View {
-    var waterCons = 0
+    @State var waterCons: String = ""
+    @State var totalWater: Int = 0
+    @State var wrongInput: Bool = false
+    @State var yChange: Int = 0
+    let limitWater: Int = 0
     var body: some View {
+
      /*   let quoteList = ["Keep up the great work!", "You can do it!", "Almost there!", "You got this!", "Do not give up!", "Doing amazing!"]
         var randNum = Int.random(in: 0...6)
       func fillBody() {
@@ -20,10 +25,17 @@ struct WaterTracker: View {
       */
         ZStack {
             Color("BackColor").ignoresSafeArea()
+            Image("Water")
+                .resizable(resizingMode: .stretch)
+                .aspectRatio(contentMode: .fit)
+                .position(x: 200, y: CGFloat(758 - yChange))
+            //y = 758: lowest visible point for blue rectangle
+            //y = 525: highest visible point for blue rectangle
+            
             //background color
             //water that fills the body (blue rectangles)
             //photo of the human body
-            VStack {
+            VStack(alignment: .center) {
                 Spacer()
                 HStack {
                     Text("Keep up the good work!")
@@ -41,21 +53,44 @@ struct WaterTracker: View {
                 }
                 Spacer()
                 
-                TextField("Water Consumed in Ounces", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
+             TextField("Water Consumed in Ounces", text: $waterCons)
                     .padding(.vertical)
                     .font(.title)
                     .multilineTextAlignment(.center)
                     .padding(.all)
-
+                
                 
                 Button("Fill") {
-                  //  fillBody()
+                    if let waterDrank = Int(waterCons){
+                        totalWater += waterDrank
+                        yChange = totalWater * 2
+                        waterCons = ""
+                    }
+                    else{
+                        wrongInput = true
+
+                    }
                 }
                 .padding(.all)
                 .background(Rectangle() .foregroundColor(.white))
                 .cornerRadius(15)
                 .font(.title)
                 
+                if wrongInput == true{
+                    Text("Invalid input. Please don't put any special characters, spaces, or letters.")
+                        .font(.title3)
+                        .fontWeight(.semibold)
+                        .foregroundColor(Color.red)
+                        .multilineTextAlignment(.center)
+
+                }
+                if totalWater >= 117{
+                    Text("You have reached your daily need. Congrats!")
+                        .font(.title2)
+                        .fontWeight(.semibold)
+                        .foregroundColor(Color.green)
+                        .multilineTextAlignment(.center)
+                }
                 Spacer()
                 HStack {
                     Spacer()
@@ -65,8 +100,7 @@ struct WaterTracker: View {
                         .aspectRatio(contentMode: .fill)
                         .padding(.trailing)
                 }
-                
-                    //var waterCons +=
+
             }
 
         }
