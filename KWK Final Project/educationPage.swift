@@ -20,12 +20,16 @@ struct informationPage: View {
             
             VStack {
                 Spacer()
-                    .frame(height: 60)
-                Text("Why is Water Conservation Important?")
+                    .frame(height: 20)
+                Text("Why is Water     Conservation Important?")
                     .font(.title)
                     .fontWeight(.bold)
                     .multilineTextAlignment(.center)
-                
+                    .padding()
+                    .background(Rectangle() .foregroundColor(.white))
+                    .cornerRadius(15)
+                    .shadow(radius: 15)
+                    .padding()
                 Spacer()
                 
                 Image(images[currentIndex])
@@ -34,7 +38,7 @@ struct informationPage: View {
                 
                 HStack {
                     // the loop below creates circles for each image
-                    ForEach (0..<images.count) { index in
+                    ForEach (0..<4) { index in
                         Circle()
                             .fill(self.currentIndex == index ? Color.gray : Color.black)
                             .frame(width: 10, height: 10)
