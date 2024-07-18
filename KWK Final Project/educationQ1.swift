@@ -50,7 +50,7 @@ struct SwiftUIView: View {
                         .font(.title3)
                         .fontWeight(.semibold)
                         Button("3-9 min") {
-                            correctAnswer = "Not bad, you are staying on top of your water consumption ✅"
+                            correctAnswer = "Not bad, you are staying on top of your water conservation ✅"
                         }
                         .frame(width: 150, height: 60)
                         .background(.yellow)
