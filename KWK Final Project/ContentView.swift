@@ -13,26 +13,16 @@ struct ContentView: View {
             ZStack {
                 Color("BackColor").ignoresSafeArea()
                 VStack {
-                    VStack {
-                        Image("WaveHeatIcon")
-                            .resizable(resizingMode: .stretch)
+                    Image("WaveHeatIcon")
+                        .resizable(resizingMode: .stretch)
+                        .position(x: 197, y: 550)
+                        .aspectRatio(contentMode: .fill)
+                    NavigationLink(destination: Home()) {
+                        Image(.getStarted)
+                            .resizable()
+                            .position(x: 194, y: 180)
                             .aspectRatio(contentMode: .fill)
-                    VStack {
-                        Spacer()
-                        NavigationLink(destination: Home()) {
-                            //Change to start button
-                            Image("RecipesIcon")
-                                .resizable(resizingMode:.stretch)
-                                .aspectRatio(contentMode: .fit)
-                            }
-                        
-                    }
-
-                }
-                
-                    
-                    
-                    
+                        }
                 }
             }
         }
