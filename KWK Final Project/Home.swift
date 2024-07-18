@@ -26,7 +26,7 @@ struct Home: View {
                             .frame(width: 250.0, height: 250.0)
                     }
                     NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
-                        Image(.climateChangeIcon)
+                        Image(.recipesIcon)
                             .resizable()
                             .position(x: 84, y: 138)
                             .padding(.leading)
@@ -34,7 +34,7 @@ struct Home: View {
                     }
                 }
                 HStack {
-                    NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
+                    NavigationLink(destination: informationPage()) {
                         Image(.climateChangeIcon)
                             .resizable()
                             .position(x: 150, y: 70)
