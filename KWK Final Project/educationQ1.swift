@@ -52,7 +52,7 @@ struct SwiftUIView: View {
                         .fontWeight(.semibold)
                         .multilineTextAlignment(.center)
                         Button("3-9 min") {
-                            correctAnswer = "Not bad, you are staying on top of your water conservation ✅"
+                            correctAnswer = "Not bad, you are staying on top of your water conservation! Keep it up! ✅"
                         }
                         .padding(.horizontal)
                         .frame(width: 150, height: 60)
