@@ -61,16 +61,16 @@ struct educationPage: View {
                     
                     
                     Spacer()
-                        .frame(height: 5)
+                        .frame(height: 12)
                     
                     NavigationLink(destination: educationQ1()) {
-                        Button ("Take Water Conservation Quiz ➡️") {}
-                            .background(Rectangle() .foregroundColor(.white))
-                            .shadow(radius: 5)
+                        Text("Take Water Conservation Quiz ➡️")
                             .frame(width: 455, height: 45)
+                            .background(Rectangle().foregroundColor(.white))
                             .foregroundColor(.black)
                             .font(.title2)
                             .fontWeight(.semibold)
+                            .shadow(radius: 5)
                     }
                     
                     
