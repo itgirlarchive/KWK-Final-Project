@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct SwiftUIView: View {
+struct educationQ1: View {
     @State private var correctAnswer = ""
     
     var body: some View {
@@ -99,7 +99,7 @@ struct SwiftUIView: View {
                         .padding(.horizontal)
                     Spacer()
                         .frame(height: 20)
-                    NavigationLink(destination: ContentView()) {
+                    NavigationLink(destination: educationQ2()) {
                         Button ("Next Question ➡️") {}
                             .foregroundColor(.purple)
                             .fontWeight(.bold)
@@ -115,6 +115,6 @@ struct SwiftUIView: View {
 }
 
 #Preview {
-    SwiftUIView()
+    educationQ1()
 }
 

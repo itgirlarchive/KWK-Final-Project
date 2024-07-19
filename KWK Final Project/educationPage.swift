@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct informationPage: View {
+struct educationPage: View {
     
     @State private var currentIndex = 0
     
@@ -63,7 +63,7 @@ struct informationPage: View {
                     Spacer()
                         .frame(height: 5)
                     
-                    NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
+                    NavigationLink(destination: educationQ1()) {
                         Button ("Take Water Conservation Quiz ➡️") {}
                             .background(Rectangle() .foregroundColor(.white))
                             .shadow(radius: 5)
@@ -95,6 +95,6 @@ struct informationPage: View {
 }
 
 #Preview {
-    informationPage()
+    educationPage()
 }
 
