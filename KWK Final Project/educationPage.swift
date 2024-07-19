@@ -22,22 +22,23 @@ struct informationPage: View {
                 VStack {
                     Spacer()
                         .frame(height: 20)
-                    Text("Why is Water     Conservation Important?")
+                    Text("Why is Water Conservation Important?")
                         .font(.title)
                         .fontWeight(.bold)
                         .multilineTextAlignment(.center)
                         .padding()
                         .background(Rectangle() .foregroundColor(.white))
+                        .frame(width: 380)
                         .cornerRadius(15)
                         .shadow(radius: 15)
                         .padding()
                     Spacer()
-                        .frame(height: 30)
+                        .frame(height: 20)
                     
                     Image(images[currentIndex])
                         .resizable(resizingMode: .stretch)
                         .aspectRatio(contentMode: .fill)
-                        .frame(height: 190)
+                        .frame(width: 400, height: 260)
                     
                     HStack {
                         // the loop below creates circles for each image
@@ -51,29 +52,27 @@ struct informationPage: View {
                     Spacer()
                         .frame(height: 10)
                     
-                    ScrollView {
-                        Text("It is is important to be mindful about water consumption and the way we use water. Around the world, over 2 billion people are forced to live without access to safely managed drinking water services. As the world is facing increased drought and water pollution, remember to conserve water.")
-                            .font(.headline)
-                            .multilineTextAlignment(.center)
-                            .padding(.all, 10)
-                    }
+                    
+                    Text("It is is important to be mindful about water consumption and the way we use water. Around the world, over 2 billion people are forced to live without access to safely managed drinking water services. As the world is facing increased drought and water pollution, remember to conserve water.")
+                        .font(.title3)
+                        .multilineTextAlignment(.center)
+                        .padding(.horizontal, 10)
+                        .frame(width: 380)
+                    
                     
                     Spacer()
-                        .frame(height: 10)
-                    NavigationStack {
-                        NavigationLink(destination: SwiftUIView()) {
-                            Button ("Take Water Conservation Quiz ➡️") {}
-                                .background(Rectangle() .foregroundColor(.white))
-                                .shadow(radius: 5)
-                                .padding(.all)
-                                .foregroundColor(.black)
-                                .font(.body)
-                                .fontWeight(.semibold)
-                                .cornerRadius(/*@START_MENU_TOKEN@*/11.0/*@END_MENU_TOKEN@*/)
-                        }
-                        
-                        
+                        .frame(height: 5)
+                    
+                    NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
+                        Button ("Take Water Conservation Quiz ➡️") {}
+                            .background(Rectangle() .foregroundColor(.white))
+                            .shadow(radius: 5)
+                            .padding(.all)
+                            .foregroundColor(.black)
+                            .font(.title2)
+                            .fontWeight(.semibold)
                     }
+                    
                     
                 }.onAppear {
                     // uses Timers to get the photos to cycle
@@ -85,7 +84,7 @@ struct informationPage: View {
                         }
                     }
                 }
-                .padding(20)
+                .padding(5)
                 
             }
             
@@ -98,3 +97,4 @@ struct informationPage: View {
 #Preview {
     informationPage()
 }
+
