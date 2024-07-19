@@ -44,44 +44,57 @@ struct SwiftUIView: View {
                         Button("Under 3 min") {
                             correctAnswer = "Whew! You are committed to conserving water! 💧"
                         }
+                        .padding(.horizontal)
                         .frame(width: 150, height: 60)
                         .background(.yellow)
                         .foregroundColor(.black)
                         .font(.title3)
                         .fontWeight(.semibold)
+                        .multilineTextAlignment(.center)
                         Button("3-9 min") {
                             correctAnswer = "Not bad, you are staying on top of your water conservation ✅"
                         }
+                        .padding(.horizontal)
                         .frame(width: 150, height: 60)
                         .background(.yellow)
                         .foregroundColor(.black)
                         .font(.title3)
                         .fontWeight(.semibold)
+                        .multilineTextAlignment(.center)
+
                     }
                     
                     HStack {
                         Button("10-15 min") {
                             correctAnswer = "Taking shorter showers can be a big step in the journey for water conservation"
                         }
+                        .padding(.horizontal)
                         .frame(width: 150, height: 60)
                         .background(.yellow)
                         .foregroundColor(.black)
                         .font(.title3)
                         .fontWeight(.semibold)
+                        .multilineTextAlignment(.center)
+
                         Button("15+ min") {
                             correctAnswer = "Try to take shorter showers, as that can be a gigantic leap in water conservation!"
                         }
+                        .padding(.horizontal)
                         .frame(width: 150, height: 60)
                         .background(.yellow)
                         .foregroundColor(.black)
                         .font(.title3)
                         .fontWeight(.semibold)
+                        .multilineTextAlignment(.center)
+
                     }
                     
                     Spacer()
                     Text(correctAnswer)
                         .font(.title2)
                         .fontWeight(.bold)
+                        .multilineTextAlignment(.center)
+                        .padding(.horizontal)
                     Spacer()
                         .frame(height: 20)
                     NavigationLink(destination: ContentView()) {
