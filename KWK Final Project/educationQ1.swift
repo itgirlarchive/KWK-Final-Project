@@ -99,11 +99,12 @@ struct educationQ1: View {
                         .padding(.horizontal)
                     Spacer()
                         .frame(height: 20)
+                    
                     NavigationLink(destination: educationQ2()) {
-                        Button ("Next Question ➡️") {}
-                            .foregroundColor(.purple)
+                        Text("Next Question ➡️")
                             .fontWeight(.bold)
                             .font(.title2)
+                            .foregroundColor(Color.purple)
                             
                     }
                     
