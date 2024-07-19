@@ -17,6 +17,7 @@
 		94106A302C41C2DB006F1743 /* KWK_Final_ProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94106A2F2C41C2DB006F1743 /* KWK_Final_ProjectUITestsLaunchTests.swift */; };
 		BD3AA2AF2C49C44500738F36 /* educationQ1.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3AA2AE2C49C44500738F36 /* educationQ1.swift */; };
 		BD44D7F22C48589500AB7457 /* educationPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD44D7F12C48589500AB7457 /* educationPage.swift */; };
+		BD59EC6B2C4ACC3100BDDCF6 /* educationQ2.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD59EC6A2C4ACC3100BDDCF6 /* educationQ2.swift */; };
 		BDACD9D92C49D32F00F2E2CF /* StayCool.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDACD9D82C49D32F00F2E2CF /* StayCool.swift */; };
 		BDF559822C470A8D0086DA53 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF559812C470A8D0086DA53 /* Home.swift */; };
 /* End PBXBuildFile section */
@@ -52,6 +53,7 @@
 		94106A2F2C41C2DB006F1743 /* KWK_Final_ProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KWK_Final_ProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		BD3AA2AE2C49C44500738F36 /* educationQ1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = educationQ1.swift; sourceTree = "<group>"; };
 		BD44D7F12C48589500AB7457 /* educationPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = educationPage.swift; sourceTree = "<group>"; };
+		BD59EC6A2C4ACC3100BDDCF6 /* educationQ2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = educationQ2.swift; sourceTree = "<group>"; };
 		BDACD9D82C49D32F00F2E2CF /* StayCool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StayCool.swift; sourceTree = "<group>"; };
 		BDF559812C470A8D0086DA53 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -107,6 +109,7 @@
 				94106A122C41C2DA006F1743 /* KWK_Final_ProjectApp.swift */,
 				94106A142C41C2DA006F1743 /* ContentView.swift */,
 				BD44D7F12C48589500AB7457 /* educationPage.swift */,
+				BD59EC6A2C4ACC3100BDDCF6 /* educationQ2.swift */,
 				BD3AA2AE2C49C44500738F36 /* educationQ1.swift */,
 				BDACD9D82C49D32F00F2E2CF /* StayCool.swift */,
 				BDF559812C470A8D0086DA53 /* Home.swift */,
@@ -275,6 +278,7 @@
 				BDACD9D92C49D32F00F2E2CF /* StayCool.swift in Sources */,
 				BD3AA2AF2C49C44500738F36 /* educationQ1.swift in Sources */,
 				78F6EA522C483F330079EAF9 /* WaterTracker.swift in Sources */,
+				BD59EC6B2C4ACC3100BDDCF6 /* educationQ2.swift in Sources */,
 				BD44D7F22C48589500AB7457 /* educationPage.swift in Sources */,
 				94106A152C41C2DA006F1743 /* ContentView.swift in Sources */,
 				BDF559822C470A8D0086DA53 /* Home.swift in Sources */,
