@@ -67,7 +67,7 @@ struct informationPage: View {
                         Button ("Take Water Conservation Quiz ➡️") {}
                             .background(Rectangle() .foregroundColor(.white))
                             .shadow(radius: 5)
-                            .padding(.all)
+                            .frame(width: 455, height: 45)
                             .foregroundColor(.black)
                             .font(.title2)
                             .fontWeight(.semibold)

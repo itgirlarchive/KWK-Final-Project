@@ -10,14 +10,16 @@ import SwiftUI
 
 struct SwiftUIView: View {
     @State private var correctAnswer = ""
+    
     var body: some View {
+        
         ZStack {
             Color("BackColor").ignoresSafeArea()
             
             NavigationStack {
                 VStack(alignment: .center) {
                     
-                    Spacer().frame(height:25)
+                    Spacer().frame(height:35)
                     
                     Text("Water Conservation Quiz")
                         .font(.title)
@@ -29,7 +31,7 @@ struct SwiftUIView: View {
                         .shadow(radius: 15)
                         .padding()
                     
-                    Spacer().frame(height:25)
+                    Spacer().frame(height:55)
                     
                     Text("Question 1")
                         .font(.title)
@@ -45,9 +47,9 @@ struct SwiftUIView: View {
                             correctAnswer = "Whew! You are committed to conserving water! 💧"
                         }
                         .padding(.horizontal)
-                        .frame(width: 150, height: 60)
-                        .background(.yellow)
-                        .foregroundColor(.black)
+                        .frame(width: 150, height: 80)
+                        .background(.blue)
+                        .foregroundColor(.white)
                         .font(.title3)
                         .fontWeight(.semibold)
                         .multilineTextAlignment(.center)
@@ -55,9 +57,9 @@ struct SwiftUIView: View {
                             correctAnswer = "Not bad, you are staying on top of your water conservation! Keep it up! ✅"
                         }
                         .padding(.horizontal)
-                        .frame(width: 150, height: 60)
-                        .background(.yellow)
-                        .foregroundColor(.black)
+                        .frame(width: 150, height: 80)
+                        .background(.blue)
+                        .foregroundColor(.white)
                         .font(.title3)
                         .fontWeight(.semibold)
                         .multilineTextAlignment(.center)
@@ -69,9 +71,9 @@ struct SwiftUIView: View {
                             correctAnswer = "Taking shorter showers can be a big step in the journey for water conservation"
                         }
                         .padding(.horizontal)
-                        .frame(width: 150, height: 60)
-                        .background(.yellow)
-                        .foregroundColor(.black)
+                        .frame(width: 150, height: 80)
+                        .background(.blue)
+                        .foregroundColor(.white)
                         .font(.title3)
                         .fontWeight(.semibold)
                         .multilineTextAlignment(.center)
@@ -80,9 +82,9 @@ struct SwiftUIView: View {
                             correctAnswer = "Try to take shorter showers, as that can be a gigantic leap in water conservation!"
                         }
                         .padding(.horizontal)
-                        .frame(width: 150, height: 60)
-                        .background(.yellow)
-                        .foregroundColor(.black)
+                        .frame(width: 150, height: 80)
+                        .background(.blue)
+                        .foregroundColor(.white)
                         .font(.title3)
                         .fontWeight(.semibold)
                         .multilineTextAlignment(.center)
